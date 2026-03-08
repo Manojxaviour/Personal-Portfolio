@@ -482,3 +482,10 @@ a:hover {
 .box:hover {
   transform: scale(1.2);
 }
+
+/* Form Status */
+
+#form-status {
+  margin-top: 15px;
+  font-size: 14px;
+}

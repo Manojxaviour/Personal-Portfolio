@@ -126,7 +126,7 @@
           <div class="col-lg-5 col-12 pt-3">
             <p class="fs-5 text-light">
               I help creators and startups grow with scroll-stopping visuals and clean, modern websites.
-              Let’s create something amazing together! 🚀
+              Let’s create something amazing together!
             </p>
           </div>
         </div>
@@ -736,23 +736,27 @@
           </p>
         </div>
         <div class="col-md-5">
-          <div class="mb-3">
-            <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
-              placeholder="your name" />
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control p-3 rounded-4" name="email" id="email"
-              aria-describedby="emailHelpId" placeholder="your email" />
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control p-3 rounded-4" name="your message" placeholder="your message" id="message"
-              rows="3"></textarea>
-          </div>
-          <div class="d-grid">
-            <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-4">
-              Submit
-            </button>
-          </div>
+          <form id="contact-form">
+            <div class="mb-3">
+              <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
+                placeholder="your name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control p-3 rounded-4" name="email" id="email"
+                aria-describedby="emailHelpId" placeholder="your email" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control p-3 rounded-4" name="message" placeholder="your message"
+                rows="3"></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-dark btn-lg text-uppercase rounded-4">
+                Submit
+              </button>
+            </div>
+
+            <p id="form-status"></p>
+          </form>
         </div>
       </div>
     </div>
@@ -836,6 +840,10 @@
   <script type="text/javascript" src="js/lightbox.min.js"></script>
 
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- email.js -->
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+   <script src="./js/email.js"></script>
   <script src="js/script.js"></script>
 
 </body>
